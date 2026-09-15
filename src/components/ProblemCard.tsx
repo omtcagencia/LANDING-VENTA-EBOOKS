@@ -24,30 +24,30 @@ export default function ProblemCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.4, delay: index * 0.05 }}
-      className="bg-[rgba(255,255,255,0.04)] border border-[rgba(255,255,255,0.08)] p-8 relative flex flex-col justify-between group hover:bg-[rgba(255,255,255,0.06)] hover:border-gold-premium/40 transition-all duration-300"
+      className="bg-zinc-50 border border-zinc-200 p-6 sm:p-8 relative flex flex-col justify-between group hover:bg-white hover:border-gold-premium/50 hover:shadow-md transition-all duration-300"
     >
       {/* Card Header row with icon and high-contrast number */}
-      <div className="flex items-center justify-between mb-8">
-        <div className="p-3 bg-white/[0.03] border border-white/5 rounded-none group-hover:border-gold-premium/30 transition-colors">
+      <div className="flex items-center justify-between mb-6">
+        <div className="p-3 bg-white border border-zinc-200 group-hover:border-gold-premium/40 transition-colors shadow-xs">
           {icon}
         </div>
-        <span className="font-montserrat text-2xl font-black text-white/10 group-hover:text-gold-premium/20 tracking-wider transition-colors">
+        <span className="font-montserrat text-2xl font-black text-zinc-300 group-hover:text-gold-dark tracking-wider transition-colors">
           {num}
         </span>
       </div>
 
       {/* Body */}
       <div>
-        <h3 className="font-montserrat text-lg font-black uppercase tracking-wider text-white mb-3 group-hover:text-gold-premium transition-colors">
+        <h3 className="font-montserrat text-base sm:text-lg font-black uppercase tracking-wider text-zinc-950 mb-2.5 group-hover:text-gold-dark transition-colors">
           {title}
         </h3>
-        <p className="font-sans text-xs text-zinc-400 font-light leading-relaxed">
+        <p className="font-sans text-xs sm:text-sm text-zinc-600 font-normal leading-relaxed">
           {description}
         </p>
       </div>
 
       {/* Bottom Subtle Bar */}
-      <div className="w-full h-[1px] bg-white/[0.05] group-hover:bg-gold-premium/20 absolute bottom-0 left-0 transition-colors"></div>
+      <div className="w-full h-[2px] bg-zinc-200 group-hover:bg-gold-premium absolute bottom-0 left-0 transition-colors"></div>
     </motion.div>
   );
 }

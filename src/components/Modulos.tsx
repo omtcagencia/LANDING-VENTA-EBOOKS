@@ -137,25 +137,25 @@ export default function Modulos() {
   };
 
   return (
-    <section id="contenido" className="relative py-24 md:py-32 bg-black min-h-screen">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+    <section id="contenido" className="relative py-20 md:py-28 bg-white min-h-screen border-b border-zinc-200">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 relative z-10">
         
         {/* Header Section */}
-        <div className="max-w-3xl mb-16 md:mb-24 text-left">
-          <span className="text-gold-premium uppercase tracking-[0.3em] text-xxs font-bold mb-4 flex items-center">
-            <BookOpen size={12} className="mr-1.5" /> PLAN DE DESARROLLO DE ÉLITE
+        <div className="max-w-3xl mb-12 sm:mb-16 md:mb-20 text-left">
+          <span className="text-gold-dark uppercase tracking-[0.25em] text-xxs font-bold mb-3 flex items-center">
+            <BookOpen size={12} className="mr-1.5 text-gold-premium" /> PLAN DE DESARROLLO DE ÉLITE
           </span>
-          <h2 className="font-montserrat text-3xl sm:text-4xl md:text-5xl font-black tracking-tight leading-[1.05] uppercase text-white">
-            PLAN DE ESTUDIOS <span className="text-zinc-500">PRESENCIAL DIGITALE</span>
+          <h2 className="font-montserrat text-2xl sm:text-4xl md:text-5xl font-black tracking-tight leading-[1.1] uppercase text-zinc-950">
+            PLAN DE ESTUDIOS <span className="text-zinc-400">PRESENCIAL DIGITAL</span>
           </h2>
-          <p className="font-sans text-xs text-zinc-400 uppercase tracking-widest mt-3">
+          <p className="font-sans text-xs text-zinc-500 uppercase tracking-widest mt-2 font-medium">
             SISTEMA ACADÉMICO MULTIMODULAR COMPLETO CON UN TOTAL DE 10 CAPÍTULOS
           </p>
-          <div className="w-16 h-[2px] bg-gold-premium mt-6"></div>
+          <div className="w-16 h-[2px] bg-gold-premium mt-4"></div>
         </div>
 
         {/* Responsive Grid with 10 modules */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
           {modules.map((item, index) => (
             <ModuleCard
               key={item.num}

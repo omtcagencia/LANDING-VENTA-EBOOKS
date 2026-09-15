@@ -48,28 +48,28 @@ export default function Bonos() {
   ];
 
   return (
-    <section id="bonos" className="relative py-24 md:py-32 bg-black overflow-hidden border-b border-white/5">
+    <section id="bonos" className="relative py-20 md:py-28 bg-white overflow-hidden border-b border-zinc-200">
       {/* Background ambient light */}
-      <div className="absolute top-0 left-10 w-96 h-96 bg-gold-premium/[0.03] filter blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute top-0 left-10 w-96 h-96 bg-gold-light/40 filter blur-[120px] rounded-full pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 relative z-10">
         
         {/* Headings */}
-        <div className="text-center max-w-2xl mx-auto mb-16 md:mb-24">
-          <span className="text-gold-premium uppercase tracking-[0.3em] text-xxs font-bold mb-4 inline-flex items-center">
-            <Gift size={12} className="mr-1.5" /> RECOMPENSAS EXCLUSIVAS EXPANDIDAS
+        <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-16 md:mb-20">
+          <span className="text-gold-dark uppercase tracking-[0.25em] text-xxs font-bold mb-3 inline-flex items-center">
+            <Gift size={12} className="mr-1.5 text-gold-premium" /> RECOMPENSAS EXCLUSIVAS EXPANDIDAS
           </span>
-          <h2 className="font-montserrat text-3xl sm:text-4xl md:text-5xl font-black tracking-tight uppercase text-white leading-tight">
+          <h2 className="font-montserrat text-2xl sm:text-4xl md:text-5xl font-black tracking-tight uppercase text-zinc-950 leading-tight">
             ACCESORIOS <span className="gold-gradient-text">VIP ADICIONALES</span> GRATIS
           </h2>
-          <p className="font-sans text-xs text-zinc-400 uppercase tracking-widest mt-4">
+          <p className="font-sans text-xs text-zinc-500 uppercase tracking-widest mt-2 font-medium">
             REGALOS INCLUIDOS EN TU ACCESO DIRECTO ESTA SEMANA
           </p>
-          <div className="w-12 h-[2px] bg-gold-premium mx-auto mt-6"></div>
+          <div className="w-12 h-[2px] bg-gold-premium mx-auto mt-4"></div>
         </div>
 
         {/* 3 cards grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
           {bonuses.map((bonus, i) => (
             <BonoCard
               key={bonus.id}
@@ -85,11 +85,11 @@ export default function Bonos() {
         </div>
 
         {/* Total accumulation visual trigger */}
-        <div className="mt-16 text-center">
-          <div className="inline-block border border-gold-premium/20 bg-zinc-950/80 px-8 py-5 glow-premium">
-            <p className="font-montserrat text-xs font-black tracking-widest uppercase text-white">
-              VALOR TOTAL DE LOS BONOS: <span className="text-gold-premium line-through">$111 USD</span> 
-              <span className="text-[#F4D35E] ml-2">¡GRATIS HOY CON EL PACK!</span>
+        <div className="mt-12 sm:mt-16 text-center">
+          <div className="inline-block border border-gold-premium/40 bg-gold-light/40 px-6 sm:px-8 py-4 sm:py-5 shadow-sm">
+            <p className="font-montserrat text-xs sm:text-sm font-black tracking-wider uppercase text-zinc-950">
+              VALOR TOTAL DE LOS BONOS: <span className="text-zinc-500 line-through">$111 USD</span> 
+              <span className="text-gold-dark ml-2">¡GRATIS HOY CON EL PACK!</span>
             </p>
           </div>
         </div>

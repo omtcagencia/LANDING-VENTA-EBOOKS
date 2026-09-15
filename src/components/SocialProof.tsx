@@ -10,25 +10,25 @@ export default function SocialProof() {
   ];
 
   return (
-    <div id="social-proof-bar" className="bg-black border-y border-white/8 relative z-20 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 py-8 md:py-12">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-4 divide-y md:divide-y-0 md:divide-x divide-white/8 items-center">
+    <div id="social-proof-bar" className="bg-zinc-50 border-y border-zinc-200/90 relative z-20 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6 md:py-8">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-3 divide-y md:divide-y-0 md:divide-x divide-zinc-200 items-center">
           {stats.map((stat, i) => (
             <motion.div
               key={stat.value}
-              initial={{ opacity: 0, y: 15 }}
+              initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: i * 0.08 }}
-              className="flex flex-col items-center justify-center text-center p-3 md:p-1"
+              transition={{ duration: 0.3, delay: i * 0.05 }}
+              className="flex flex-col items-center justify-center text-center p-2.5 md:p-1"
             >
               {/* Stat Value */}
-              <span className="font-montserrat text-lg md:text-xl font-black tracking-widest text-[#D4AF37] uppercase mb-1">
+              <span className="font-montserrat text-sm sm:text-base md:text-lg font-black tracking-wider text-zinc-950 uppercase mb-0.5">
                 {stat.value}
               </span>
               
               {/* Stat Subtitle */}
-              <span className="font-sans text-[10px] md:text-xxs tracking-[0.2em] text-zinc-400 uppercase font-medium">
+              <span className="font-sans text-[10px] sm:text-xxs tracking-[0.15em] text-gold-dark uppercase font-bold">
                 {stat.label}
               </span>
             </motion.div>

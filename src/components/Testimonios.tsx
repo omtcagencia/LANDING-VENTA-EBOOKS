@@ -33,28 +33,28 @@ export default function Testimonios() {
   ];
 
   return (
-    <section id="testimonios" className="relative py-24 md:py-32 bg-[#050505] overflow-hidden border-b border-white/5">
+    <section id="testimonios" className="relative py-20 md:py-28 bg-zinc-50/70 overflow-hidden border-b border-zinc-200">
       {/* Editorial aesthetic watermark background text */}
-      <div className="absolute left-0 bottom-24 select-none pointer-events-none opacity-[0.015] text-white font-montserrat font-black text-9xl tracking-[0.3em] whitespace-nowrap">
+      <div className="absolute left-0 bottom-24 select-none pointer-events-none opacity-[0.03] text-zinc-950 font-montserrat font-black text-8xl md:text-9xl tracking-[0.25em] whitespace-nowrap">
         ELITE RECOGNITION
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 relative z-10">
         
         {/* Headings */}
-        <div className="max-w-3xl mb-16 md:mb-24 text-left">
-          <span className="text-gold-premium uppercase tracking-[0.3em] text-xxs font-bold mb-4 flex items-center">
-            <MessageSquare size={12} className="mr-1.5" /> REPUTACIÓN INCUESTIONABLE
+        <div className="max-w-3xl mb-12 sm:mb-16 md:mb-20 text-left">
+          <span className="text-gold-dark uppercase tracking-[0.25em] text-xxs font-bold mb-3 flex items-center">
+            <MessageSquare size={12} className="mr-1.5 text-gold-premium" /> REPUTACIÓN INCUESTIONABLE
           </span>
-          <h2 className="font-montserrat text-3xl sm:text-4xl md:text-5xl font-black tracking-tight leading-[1.05] uppercase text-white">
+          <h2 className="font-montserrat text-2xl sm:text-4xl md:text-5xl font-black tracking-tight leading-[1.05] uppercase text-zinc-950">
             RECONOCIMIENTO Y <br />
             <span className="gold-gradient-text">RESULTADOS REALES</span>
           </h2>
-          <div className="w-16 h-[2px] bg-gold-premium mt-6"></div>
+          <div className="w-16 h-[2px] bg-gold-premium mt-4"></div>
         </div>
 
         {/* 3 cards row */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
           {testimonials.map((test, i) => (
             <TestimonialCard
               key={test.id}

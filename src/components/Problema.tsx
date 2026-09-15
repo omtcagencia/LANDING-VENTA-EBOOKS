@@ -54,27 +54,27 @@ export default function Problema() {
   ];
 
   return (
-    <section id="problemas" className="relative py-24 md:py-32 bg-black overflow-hidden border-b border-white/5">
+    <section id="problemas" className="relative py-20 md:py-28 bg-white overflow-hidden border-b border-zinc-200">
       {/* Editorial backdrop typography mask */}
-      <div className="absolute right-0 top-10 select-none pointer-events-none opacity-[0.02] text-white font-montserrat font-black text-9xl tracking-[0.25em] whitespace-nowrap">
+      <div className="absolute right-0 top-10 select-none pointer-events-none opacity-[0.03] text-zinc-950 font-montserrat font-black text-8xl md:text-9xl tracking-[0.2em] whitespace-nowrap">
         ELITE MODELING LIMITS
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10 animate-fade-in">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 relative z-10 animate-fade-in">
         {/* Section Headings */}
-        <div className="max-w-3xl mb-16 md:mb-24 flex flex-col text-left">
-          <span className="text-gold-premium uppercase tracking-[0.3em] text-xxs font-bold mb-4 flex items-center">
+        <div className="max-w-3xl mb-12 sm:mb-16 md:mb-20 flex flex-col text-left">
+          <span className="text-gold-dark uppercase tracking-[0.25em] text-xxs font-bold mb-3 flex items-center">
             <AlertCircle size={12} className="mr-1.5" /> LA CRUDA REALIDAD DEL MODELAJE
           </span>
-          <h2 className="font-montserrat text-3xl sm:text-4xl md:text-5xl font-black tracking-tight leading-[1.05] uppercase text-white">
+          <h2 className="font-montserrat text-2xl sm:text-4xl md:text-5xl font-black tracking-tight leading-[1.1] uppercase text-zinc-950">
             ¿POR QUÉ MUCHAS ASPIRANTES <br />
-            A MODELOS <span className="text-zinc-500">NUNCA LOGRAN DESTACAR?</span>
+            A MODELOS <span className="text-zinc-400">NUNCA LOGRAN DESTACAR?</span>
           </h2>
-          <div className="w-16 h-[2px] bg-gold-premium mt-6"></div>
+          <div className="w-16 h-[2px] bg-gold-premium mt-4"></div>
         </div>
 
         {/* 6 Grid Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
           {problems.map((problem, i) => (
             <ProblemCard
               key={problem.id}
@@ -89,8 +89,8 @@ export default function Problema() {
         </div>
 
         {/* Section conclusion addressing Schwartz direct response marketing */}
-        <div className="mt-16 text-center">
-          <p className="font-sans text-zinc-500 text-xs tracking-widest uppercase italic max-w-2xl mx-auto">
+        <div className="mt-12 sm:mt-16 text-center">
+          <p className="font-sans text-zinc-600 text-xs sm:text-sm tracking-wide uppercase italic max-w-2xl mx-auto px-4 font-medium">
             "No se trata de nacer con 'suerte'. Se trata de dominar las directrices técnicas del modelado comercial e internacional."
           </p>
         </div>

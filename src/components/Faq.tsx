@@ -42,25 +42,25 @@ export default function Faq() {
   };
 
   return (
-    <section id="faq" className="relative py-24 md:py-32 bg-black overflow-hidden border-b border-white/5">
-      <div className="max-w-4xl mx-auto px-6 relative z-10">
+    <section id="faq" className="relative py-20 md:py-28 bg-zinc-50/70 overflow-hidden border-b border-zinc-200">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Headings */}
-        <div className="text-center max-w-2xl mx-auto mb-16 md:mb-24">
-          <span className="text-gold-premium uppercase tracking-[0.3em] text-xxs font-bold mb-4 inline-flex items-center">
-            <HelpCircle size={12} className="mr-1.5" /> RESOLUCIÓN DE DUDAS
+        <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
+          <span className="text-gold-dark uppercase tracking-[0.25em] text-xxs font-bold mb-3 inline-flex items-center">
+            <HelpCircle size={12} className="mr-1.5 text-gold-premium" /> RESOLUCIÓN DE DUDAS
           </span>
-          <h2 className="font-montserrat text-3xl sm:text-4xl md:text-5xl font-black tracking-tight uppercase text-white leading-tight">
+          <h2 className="font-montserrat text-2xl sm:text-4xl md:text-5xl font-black tracking-tight uppercase text-zinc-950 leading-tight">
             PREGUNTAS <span className="gold-gradient-text">FRECUENTES</span>
           </h2>
-          <p className="font-sans text-xs text-zinc-400 uppercase tracking-widest mt-4">
-            REDUCCIÓN DE OBJECIONES TÉCNICAS E INDUSTRIALES
+          <p className="font-sans text-xs text-zinc-500 uppercase tracking-widest mt-2 font-medium">
+            RESPUESTAS CLARAS PARA EMPEZAR HOY MISMO
           </p>
-          <div className="w-12 h-[2px] bg-gold-premium mx-auto mt-6"></div>
+          <div className="w-12 h-[2px] bg-gold-premium mx-auto mt-4"></div>
         </div>
 
         {/* Accordions */}
-        <div className="space-y-4">
+        <div className="space-y-3 sm:space-y-4">
           {faqs.map((faq, index) => (
             <FaqAccordionItem
               key={index}
